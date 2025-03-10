@@ -257,7 +257,7 @@ bool WinCAPICryptoKeyRSA::verifySHA1PKCS1Base64Signature(const unsigned char * h
     case (XSECCryptoHash::HASH_MD5):
         alg = CALG_MD5;
         break;
-    case ():
+    case (XSECCryptoHash::HASH_SHA1):
         alg=CALG_SHA1;
         break;
     case (XSECCryptoHash::HASH_SHA256):
