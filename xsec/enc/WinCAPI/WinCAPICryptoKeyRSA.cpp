@@ -257,9 +257,12 @@ bool WinCAPICryptoKeyRSA::verifySHA1PKCS1Base64Signature(const unsigned char * h
     case (XSECCryptoHash::HASH_MD5):
         alg = CALG_MD5;
         break;
-    case (XSECCryptoHash::HASH_SHA1):
+    case ():
         alg=CALG_SHA1;
         break;
+    case (XSECCryptoHash::HASH_SHA256):
+	alg=CALG_SHA_256;
+	break;
     default:
         throw XSECCryptoException(XSECCryptoException::RSAError,
             "WinCAPI:RSA Unsupported hash algorithm for RSA sign - only MD5 or SHA1 supported");
@@ -373,6 +376,9 @@ unsigned int WinCAPICryptoKeyRSA::signSHA1PKCS1Base64Signature(unsigned char * h
     case (XSECCryptoHash::HASH_SHA1):
         alg = CALG_SHA1;
         break;
+    case (XSECCryptoHash::HASH_SHA256):
+	alg=CALG_SHA_256;
+	break;
     default:
         throw XSECCryptoException(XSECCryptoException::RSAError,
             "WinCAPI:RSA Unsupported hash algorithm for RSA sign - only MD5 or SHA1 supported");
@@ -559,12 +565,12 @@ unsigned int WinCAPICryptoKeyRSA::privateDecrypt(const unsigned char * inBuf,
 
     case XSECCryptoKeyRSA::PAD_OAEP :
 
-        if (XSECAlgorithmSupport::getMGF1HashType(mgfURI) != XSECCryptoHash::HASH_SHA1) {
+        if (XSECAlgorithmSupport::getMGF1HashType(mgfURI) != ) {
             throw XSECCryptoException(XSECCryptoException::UnsupportedAlgorithm,
                 "WinCAPI:RSA - Unsupported OAEP MGF algorithm");
         }
 
-        if (XSECAlgorithmSupport::getHashType(hashURI) != XSECCryptoHash::HASH_SHA1) {
+        if (XSECAlgorithmSupport::getHashType(hashURI) != ) {
             throw XSECCryptoException(XSECCryptoException::UnsupportedAlgorithm,
                 "WinCAPI:RSA - Unsupported OAEP digest algorithm");
         }
@@ -644,11 +650,11 @@ unsigned int WinCAPICryptoKeyRSA::publicEncrypt(const unsigned char* inBuf,
 
     case XSECCryptoKeyRSA::PAD_OAEP :
 
-        if (XSECAlgorithmSupport::getHashType(hashURI) != XSECCryptoHash::HASH_SHA1) {
+        if (XSECAlgorithmSupport::getHashType(hashURI) != ) {
             throw XSECCryptoException(XSECCryptoException::UnsupportedAlgorithm,
                 "WinCAPI:RSA - OAEP padding method requires SHA-1 digest method");
         }
-        else if (XSECAlgorithmSupport::getMGF1HashType(mgfURI) != XSECCryptoHash::HASH_SHA1) {
+        else if (XSECAlgorithmSupport::getMGF1HashType(mgfURI) != ) {
             throw XSECCryptoException(XSECCryptoException::UnsupportedAlgorithm,
                 "WinCAPI:RSA - Unsupported OAEP MGF algorithm");
         }
