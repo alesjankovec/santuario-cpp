@@ -1,5 +1,5 @@
 Name:           xml-security-c
-Version:        2.0.4
+Version:        2.0.5
 Release:        1
 Summary:        Apache XML security C++ library
 Group:          Development/Libraries/C and C++
@@ -101,6 +101,9 @@ This package includes files needed for development with xml-security-c.
 %exclude %{_libdir}/*.la
 
 %changelog
+* Mon Mar 11 2025 Aleš Jankovec <ales.jankvec@halcom.si> 2.0.5
+- Added sha256 signature support to wincapi.
+
 * Thu Oct 14 2021 Scott Cantor <cantor.2@osu.edu> 2.0.3-1
 - Bump version for OpenSSL 3 fix
 
