@@ -176,7 +176,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>$(XERCESCROOT)\include;$(XALANCROOT)\include;$(OPENSSLROOT)\$(PlatformShortName)\include;../../../..</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>XSEC_HAVE_OPENSSL;_CRT_SECURE_NO_DEPRECATE;_XSEC_DO_MEMDEBUG;WIN32;_DEBUG;_WINDOWS;_USRDLL;XSEC_XKMS_ENABLED;XSEC_BUILDING_LIBRARY;XSEC_HAVE_XALAN;XSEC_HAVE_WINCAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>XSEC_HAVE_OPENSSL;_CRT_SECURE_NO_DEPRECATE;_XSEC_DO_MEMDEBUG;WIN32;_DEBUG;_WINDOWS;_USRDLL;XSEC_BUILDING_LIBRARY;XSEC_HAVE_XALAN;XSEC_HAVE_WINCAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -215,7 +215,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>$(XERCESCROOT)\include;$(XALANCROOT)\include;$(OPENSSLROOT)\$(PlatformShortName)\include;../../../..</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>XSEC_HAVE_OPENSSL;_XSEC_DO_MEMDEBUG;WIN32;_DEBUG;_WINDOWS;_USRDLL;XSEC_XKMS_ENABLED;XSEC_BUILDING_LIBRARY;XSEC_HAVE_XALAN;XSEC_HAVE_WINCAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>XSEC_HAVE_OPENSSL;_CRT_SECURE_NO_DEPRECATE;_XSEC_DO_MEMDEBUG;WIN32;_DEBUG;_WINDOWS;_USRDLL;XSEC_BUILDING_LIBRARY;XSEC_HAVE_XALAN;XSEC_HAVE_WINCAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -250,7 +250,7 @@
     </PreBuildEvent>
     <ClCompile>
       <AdditionalIncludeDirectories>$(XERCESCROOT)\include;$(XALANCROOT)\include;$(OPENSSLROOT)\$(PlatformShortName)\include;../../../..</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>XSEC_HAVE_OPENSSL;_CRT_SECURE_NO_DEPRECATE;WIN32;NDEBUG;_WINDOWS;_USRDLL;XSEC_BUILDING_LIBRARY;XSEC_HAVE_XALAN;XSEC_XKMS_ENABLED;XSEC_HAVE_WINCAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>XSEC_HAVE_OPENSSL;_CRT_SECURE_NO_DEPRECATE;WIN32;NDEBUG;_WINDOWS;_USRDLL;XSEC_BUILDING_LIBRARY;XSEC_HAVE_XALAN;XSEC_HAVE_WINCAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PrecompiledHeaderFile>
@@ -287,7 +287,7 @@
     </Midl>
     <ClCompile>
       <AdditionalIncludeDirectories>$(XERCESCROOT)\include;$(XALANCROOT)\include;$(OPENSSLROOT)\$(PlatformShortName)\include;../../../..</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>XSEC_HAVE_OPENSSL;_CRT_SECURE_NO_DEPRECATE;WIN32;NDEBUG;_WINDOWS;_USRDLL;XSEC_BUILDING_LIBRARY;XSEC_HAVE_XALAN;XSEC_XKMS_ENABLED;XSEC_HAVE_WINCAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>XSEC_HAVE_OPENSSL;_CRT_SECURE_NO_DEPRECATE;WIN32;NDEBUG;_WINDOWS;_USRDLL;XSEC_BUILDING_LIBRARY;XSEC_HAVE_XALAN;XSEC_HAVE_WINCAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PrecompiledHeaderFile>
@@ -322,7 +322,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>$(XERCESCROOT)\include;$(XALANCROOT)\include;$(OPENSSLROOT)\$(PlatformShortName)\include;../../../..</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>XSEC_HAVE_OPENSSL;_CRT_SECURE_NO_DEPRECATE;_XSEC_DO_MEMDEBUG;WIN32;_DEBUG;_WINDOWS;_USRDLL;XSEC_BUILDING_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>XSEC_HAVE_OPENSSL;XSEC_HAVE_WINCAPI;_CRT_SECURE_NO_DEPRECATE;_XSEC_DO_MEMDEBUG;WIN32;_DEBUG;_WINDOWS;_USRDLL;XSEC_BUILDING_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -361,7 +361,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>$(XERCESCROOT)\include;$(XALANCROOT)\include;$(OPENSSLROOT)\$(PlatformShortName)\include;../../../..</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>XSEC_HAVE_OPENSSL;_CRT_SECURE_NO_DEPRECATE;_XSEC_DO_MEMDEBUG;WIN32;_DEBUG;_WINDOWS;_USRDLL;XSEC_BUILDING_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>XSEC_HAVE_OPENSSL;XSEC_HAVE_WINCAPI;_CRT_SECURE_NO_DEPRECATE;_XSEC_DO_MEMDEBUG;WIN32;_DEBUG;_WINDOWS;_USRDLL;XSEC_BUILDING_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -396,7 +396,7 @@
     </PreBuildEvent>
     <ClCompile>
       <AdditionalIncludeDirectories>$(XERCESCROOT)\include;$(XALANCROOT)\include;$(OPENSSLROOT)\$(PlatformShortName)\include;../../../..</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>XSEC_HAVE_OPENSSL;_CRT_SECURE_NO_DEPRECATE;WIN32;NDEBUG;_WINDOWS;_USRDLL;XSEC_BUILDING_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>XSEC_HAVE_OPENSSL;XSEC_HAVE_WINCAPI;_CRT_SECURE_NO_DEPRECATE;WIN32;NDEBUG;_WINDOWS;_USRDLL;XSEC_BUILDING_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PrecompiledHeaderFile>
@@ -433,7 +433,7 @@
     </Midl>
     <ClCompile>
       <AdditionalIncludeDirectories>$(XERCESCROOT)\include;$(XALANCROOT)\include;$(OPENSSLROOT)\$(PlatformShortName)\include;../../../..</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>XSEC_HAVE_OPENSSL;_CRT_SECURE_NO_DEPRECATE;WIN32;NDEBUG;_WINDOWS;_USRDLL;XSEC_BUILDING_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>XSEC_HAVE_OPENSSL;XSEC_HAVE_WINCAPI;_CRT_SECURE_NO_DEPRECATE;WIN32;NDEBUG;_WINDOWS;_USRDLL;XSEC_BUILDING_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PrecompiledHeaderFile>
